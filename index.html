@@ -1,56 +1,119 @@
-<form action="submit.html">
-    <h1 style="text-align:center">Student Application</h1>
-    <div align="center">
-        <table>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text" name="firstname" placeholder="Enter Your FirstName"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" name="lastname" placeholder="Enter Your LastName"></td>
-            </tr>
-            <tr>
-                <td>Age</td>
-                <td><input type="Number" name="age" placeholder="Enter Your Age"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="text" name="email" placeholder="Enter Your Email"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" name="password" placeholder="Enter Your Password"></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td>
-                    <TextArea name="address" placeholder="Enter Your Address"></TextArea>
-                </td>
-            </tr>
-            <tr>
-                <td>Phone No</td>
-                <td><input type="Number" name="Phone" placeholder="Enter Your Phone Number"></td>
-            </tr>
-            <tr>
-                <td>Search</td>
-                <td><input type="search" name="search" placeholder="Search Box"></td>
-            </tr>
-            <tr>
-                <td>Date Of Birth</td>
-                <td><input type="date" name="dob" placeholder="Enter Your Name"></td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="course" value="male">Male</td>
-                <td><input type="radio" name="course" value="female">Female</td>
-            </tr>
-            <tr>
-                <td><button type="submit" value="submit">Submit</button></td>
-                <td><button type="reset" value="reset">Reset</button></td>
-            </tr>
-        </table>
-</form>
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
 
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        ol {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        li,
+        h1 {
+            color: white;
+            padding: 10px;
+        }
+        
+        li {
+            padding-left: 10px;
+            font-size: 1.2rem;
+        }
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .txt {
+            color: rgb(240, 238, 238);
+            position: fixed;
+            top: 200px;
+            left: 20px;
+        }
+        
+        p {
+            width: 600px;
+        }
+        
+        img {
+            width: 30px;
+            height: 30px;
+            padding-left: 5px;
+            border-radius: 50%;
+        }
+        
+        img:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            position: fixed;
+            left: 20px;
+            bottom: 10px;
+        }
+        
+        button {
+            padding: 5px;
+            transition: all 03s;
+            background-color: transparent;
+            color: white;
+        }
+        
+        button:hover {
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cont"></header>
+    <nav>
+        <h1>🌍Travel</h1>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ol>
+    </nav>
+    <main>
+        <video src="D:\projects\MERN INTERN\Day 3\videoplayback.mp4" controls autoplay loop></video>
+    </main>
+    <div class="txt">
+        <h3>NEVER STOP</h3>
+        <h2>EXPLORING THE WORLD</h2>
+        <br><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam repudiandae sequi voluptates ipsum blanditiis aut delectus? Minus consequuntur molestias laudantium quod quia magni nisi iure cumque, libero quo voluptatum qui!</p>
+        <button> EXPLORE  </button> </div>
+    <footer>
+        <ol>
+            <li><img src="D:\projects\MERN INTERN\Day 3\WhatsApp Image 2025-12-03 at 09.23.50_344b3342.jpg" alt=""></li>
+            <li><img src="D:\projects\MERN INTERN\Day 3\WhatsApp Image 2025-12-03 at 09.24.44_f11abc9c.jpg" alt=""></li>
+        </ol>
+    </footer>
+    </header>
+</body>
