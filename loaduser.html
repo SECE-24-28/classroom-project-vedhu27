@@ -1,0 +1,28 @@
+let employee=[ {ena:"Arun",mob:101}, {ena:"ajay",mob:102}, {ena:"kumar",mob:103}, {ena:"akash",mob:104}, {ena:"abdhul",mob:105} ] let newEmp = employee.filter((emp)=> { emp.mob.include; }) console.log(newEmp)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="t1">
+    <p id="te"></p>
+</body>
+<script>
+    let t = document.getElementById("t1")
+    let p = document.getElementById("te")
+    let employee = ["Vishal", "Pseudo", "Ram", "Ravi", "Raj", "Praveen"]
+    t.addEventListener("keyup", () => {
+        let newEmp = employee.filter((emp) => {
+            return emp.toLowerCase().includes(t.value.toLowerCase());
+        })
+        p.textContent = newEmp.join(", ")
+
+    });
+</script>
+
+</html>
