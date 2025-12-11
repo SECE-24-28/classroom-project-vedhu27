@@ -1,0 +1,17 @@
+{
+    "name": "mern-intern",
+    "version": "1.0.0",
+    "description": "MERN Internship Projects",
+    "private": true,
+    "workspaces": [
+        "day6_react",
+        "router_react/router_react"
+    ],
+    "scripts": {
+        "dev:day6": "npm -w day6_react run dev",
+        "dev:router": "npm -w router_react/router_react run dev",
+        "dev": "npm -w day6_react run dev",
+        "build": "npm -w day6_react run build && npm -w router_react/router_react run build",
+        "preview": "npm -w day6_react run preview && npm -w router_react/router_react run preview"
+    }
+}
